@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <title>Log In</title>
+    <style>
+    h2{
+        text-align: center;
+        padding-right: 40px;
+    }
+    .login{
+        color: white;
+        width: 300px;
+        padding: 10px;
+        position: absolute;
+        font-size: 20px;
+        top: 10%;
+        right: 50px; 
+        line-height: 50px;
+        border-radius: 10px;
+        background: transparent;
+        text-align: left;
+        vertical-align: middle;
+        border:blue solid 2px;
+        margin-right: 500px;
+        margin-top: 50px;
+    }
+    input{
+        height: 30px;
+        width: 85%;
+        padding-left: 10px;
+        border-radius: 8px;
+    }
+    button{
+        margin: 13px;
+        width:70px;
+        height: 30px;
+        padding: 5px;
+        float: left;
+        vertical-align: middle;
+        font-size: 15px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        border-radius: 10px;
+        background-color: rgb(67, 185, 67);
+        color: white;
+        
+    }
+
+    input:focus {
+    background-color: rgba(70, 130, 180, 0.35);
+}
+    #myVideo{
+        position: fixed;
+        width: auto;
+        height: auto;
+    }
+    a{
+        color: white;
+        font-size: 14px;
+    }
+    
+    </style>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="Background.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+
+    <div class="login">
+        <h2>Create Gmail A/c</h2>
+        <form action="Home.html">
+            <label for="u_name">Username: </label><br>
+            <input type="text" name="u_name" placeholder="Enter Your Full Name" required><br>
+
+            <label for="phone">Phone No.: </label><br>
+            <input type="text" name="phone" placeholder="Enter your Contact Number" required><br>
+
+            <label for="email">Email Id: </label><br>
+            <input type="text" name="email" placeholder="Enter your gmail id" required><br>
+
+            <button>Reset</button> 
+            <button>Submit</button> 
+        </form>
+    </div>
+</body>
+</html>
